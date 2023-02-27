@@ -1,12 +1,17 @@
 package com.base_package;
 
+
+import java.awt.*;
+
 public class hra {
     private Platno platno;
     private Ramecek ramecek;
+    private MyMenu menu;
 
     public hra(){
         platno = new Platno();
-        ramecek = new Ramecek(platno);
+        menu = new MyMenu();
+        ramecek = new Ramecek(platno, menu);
     }
 
 }
